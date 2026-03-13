@@ -787,7 +787,7 @@ namespace RealFuels.Tanks
 
             if (basemass >= 0)
             {
-                double tankDryMass = tanksDict.Values.Sum(t => t.Volume * t.mass);
+                double tankDryMass = tanksDict.Values.Sum(t => t. * t.mass);
                 mass = (float) ((basemass + tankDryMass) * MassMult);
             }
             else
